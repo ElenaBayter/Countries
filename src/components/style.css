@@ -1,0 +1,21 @@
+
+.container {
+    padding: 3%;
+}
+.countries-box{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+@media screen and (max-width: 850px){
+    .countries-box{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width: 450px){
+    .container {
+        padding: 5%;
+    }
+    .countries-box{
+        grid-template-columns: 1fr;
+    }
+}
